@@ -16,7 +16,7 @@ end
     dogs = []
 
     def initialize(name, breed, age)
-      new_dog = dog.new 
+      new_dog = dog.new
       @name = name
       @breed = breed
       @age = age
