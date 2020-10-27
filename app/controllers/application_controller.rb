@@ -5,8 +5,13 @@ class ApplicationController < Sinatra::Base
   	set :public_dir, "public"
   end
 
+  get "/" do
+  	erb :index
+  end
+end
+
   class Dog
-    attr_accessor :name, :breed, :age, :ApplicationController
+    attr_accessor :name, :breed, :age
 
     def initialize(name, breed, age)
       @name = name
@@ -14,7 +19,4 @@ class ApplicationController < Sinatra::Base
       @age = age
     end
 
-  get "/" do
-  	erb :index
-  end
 end
